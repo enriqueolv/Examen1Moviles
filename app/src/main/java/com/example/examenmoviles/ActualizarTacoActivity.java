@@ -64,6 +64,7 @@ public class ActualizarTacoActivity extends AppCompatActivity {
                     //Habilitar las vistas
                     enable_taco_fields();
                     boton_modificar.setEnabled(true);
+                    editText_num_taco.setEnabled(false);
                 }else{
                     Context context = getApplicationContext();
                     CharSequence text = "Ese número de taco no existe";
@@ -72,7 +73,7 @@ public class ActualizarTacoActivity extends AppCompatActivity {
                     toast.show();
                 }
 
-                editText_num_taco.setEnabled(false);
+
             }
         });
 

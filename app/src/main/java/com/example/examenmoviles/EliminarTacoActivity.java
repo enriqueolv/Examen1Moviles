@@ -67,7 +67,6 @@ public class EliminarTacoActivity extends AppCompatActivity {
 
     }
 
-
     private void init_components(){
         arrayTacos = (ArrayList<Taco>) getIntent().getSerializableExtra("arrayTacos");
         editTextNumber = (EditText) findViewById(R.id.editTextNumber_num_taco_ACT_eliminar_taco);
