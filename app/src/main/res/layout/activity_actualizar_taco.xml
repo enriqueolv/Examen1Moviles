@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActualizarTacoActivity">
+
+    <TextView
+        android:id="@+id/textView_label_modificar_taco_ACT_actualizar_taco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#00FFFFFF"
+        android:text="Escoge un taco y modificalo"
+        android:textColor="#414A45"
+        android:textSize="30sp"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_label_carne_ACT_actualizar_taco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carne:"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.081"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.205" />
+
+    <EditText
+        android:id="@+id/editText_tipo_de_carne_ACT_actualizar_taco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintStart_toEndOf="@+id/textView_label_carne_ACT_actualizar_taco"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.199" />
+
+    <TextView
+        android:id="@+id/textView_label_salsa_ACT_actualizar_taco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salsa:"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_label_carne_ACT_actualizar_taco"
+        app:layout_constraintVertical_bias="0.051" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup_ACT_agregar_taco"
+        android:layout_width="282dp"
+        android:layout_height="41dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.408"
+        app:layout_constraintStart_toEndOf="@+id/textView_label_salsa_ACT_actualizar_taco"
+        app:layout_constraintTop_toBottomOf="@+id/editText_tipo_de_carne_ACT_actualizar_taco"
+        app:layout_constraintVertical_bias="0.031">
+
+        <RadioButton
+            android:id="@+id/radioButton_salsa_pica_ACT_actualizar_taco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:text="De la que pica"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <RadioButton
+            android:id="@+id/radioButton_salsa_no_pica_ACT_actualizar_taco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:text="De la que NO pica"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
+
+
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/checkBox_limon_ACT_actualizar_taco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Limón"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_label_salsa_ACT_actualizar_taco"
+        app:layout_constraintVertical_bias="0.071" />
+
+    <CheckBox
+        android:id="@+id/checkBox_cilantro_ACT_actualizar_taco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cilantro"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_limon_ACT_actualizar_taco"
+        app:layout_constraintVertical_bias="0.071" />
+
+
+    <CheckBox
+        android:id="@+id/checkBox_cebolla_ACT_actualizar_taco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cebolla"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_cilantro_ACT_actualizar_taco"
+        app:layout_constraintVertical_bias="0.077" />
+
+
+    <Button
+        android:id="@+id/boton_buscar_ACT_actualizar_taco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buscar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.100"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95" />
+
+    <Button
+        android:id="@+id/boton_modificar_ACT_actualizar_taco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modificar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95" />
+
+    <Button
+        android:id="@+id/boton_regresar_ACT_actualizar_taco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Regresar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.900"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95" />
+
+
+    <TextView
+        android:id="@+id/textView_label_num_taco_ACT_actualizar_taco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Num. Taco"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.127" />
+
+    <EditText
+        android:id="@+id/editTextNumber_num_taco_ACT_actualizar_taco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.115" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
